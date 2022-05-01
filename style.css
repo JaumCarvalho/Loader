@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background-color: #000000;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}   
+
+.loader{
+    height: 40px;
+    width: 40px;
+    border: solid 6px;
+    border-radius: 50%;
+    border-left-color: yellow;
+    border-right-color:green;
+    border-top-color: red;
+    border-bottom-color: blue;
+    animation: spin 1s infinite;
+    
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg) scale(1.2);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
